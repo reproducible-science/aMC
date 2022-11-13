@@ -19,7 +19,7 @@ then the aMC optimizer can be used by defining a "closure" function which calcul
 ```
 optimizer = aMC(net.parameters(), init_sigma = ...)
 
-def loss_closure(data):
+def loss_closure():
     loss = loss_function(net(data),...)
     return loss
 
